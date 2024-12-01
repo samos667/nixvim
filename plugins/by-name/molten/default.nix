@@ -80,9 +80,11 @@ mkVimPlugin {
         [
           "none"
           "image.nvim"
+          "wezterm"
         ]
         ''
           How images are displayed.
+          wezterm require plugins.wezterm.enable = true
         '';
 
     open_cmd = helpers.mkNullOrOption types.str ''
